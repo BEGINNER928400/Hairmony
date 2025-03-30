@@ -34,21 +34,30 @@ export default function Home() {
                 type="text"
                 placeholder="Nom"
                 value={newClient.name}
-                onChange={(e) => setNewClient({ ...newClient, name: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setNewClient({ ...newClient, name: e.target.value })
+                  }
+                  
             />
             <br />
             <input
                 type="text"
                 placeholder="Téléphone"
                 value={newClient.phone}
-                onChange={(e) => setNewClient({ ...newClient, phone: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setNewClient({ ...newClient, name: e.target.value })
+                  }
+                  
             />
             <br />
             <input
                 type="text"
                 placeholder="Notes"
                 value={newClient.notes}
-                onChange={(e) => setNewClient({ ...newClient, notes: e.target.value })}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setNewClient({ ...newClient, name: e.target.value })
+                  }
+                  
             />
             <br />
             <button onClick={handleAddClient} style={{ marginTop: "1rem" }}>
