@@ -1,8 +1,8 @@
 import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
-
-export async function POST(req) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export async function POST(_req) {
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
