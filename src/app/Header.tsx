@@ -23,9 +23,8 @@ export default function Header() {
     <header className="flex justify-between p-4 bg-white shadow">
       <h1 className="text-xl font-bold">Hairmony</h1>
       {!user ? (
-        <div className="space-x-4">
+        <div>
           <Link href="/login" className="text-blue-600 hover:underline">Connexion</Link>
-          <Link href="/signup" className="text-green-600 hover:underline">S’abonner</Link>
         </div>
       ) : (
         <span className="text-sm text-gray-600">Connecté</span>
